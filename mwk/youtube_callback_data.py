@@ -114,30 +114,30 @@ async def catch_youtube_dldata(c, q):
         filename = await downloadvideocli(video_command)
         dur = round(duration(filename))
         med = InputMediaVideo(
-            media=filename + "Shamil 9496300461",
+            media=filename,
             duration=dur,
             width=width,
             height=height,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename) + "Uploaded by @mwk_youtubebot",
+            caption=os.path.basename(filename)\n"Uploaded by @mwk_youtubebot",
             supports_streaming=True
         )
 
     if cb_data.startswith("docaudio"):
         filename = await downloadaudiocli(audio_command)
         med = InputMediaDocument(
-            media=filename + "Shamil 9496300461",
+            media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename) + "Uploaded by @mwk_youtubebot"
+            caption=os.path.basename(filename)\n"Uploaded by @mwk_youtubebot"
         )
 
     if cb_data.startswith("docvideo"):
         filename = await downloadvideocli(video_command)
         dur = round(duration(filename))
         med = InputMediaDocument(
-            media=filename + "Shamil 9496300461",
+            media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename) + "Uploaded by @mwk_youtubebot"
+            caption=os.path.basename(filename)\n"Uploaded by @mwk_youtubebot"
         )
     if med:
         loop.create_task(send_file(c, q, med, filename))
