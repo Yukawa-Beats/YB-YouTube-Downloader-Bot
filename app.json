@@ -1,0 +1,29 @@
+{
+  "name": "YouTube To Telegram Uploader Bot by Shamil Habeeb",
+  "description": "A telegram bot To Download Youtube Files ",
+  "logo": "https://telegra.ph/file/cdb294d11026660eaf84b.jpg",
+  "keywords": [
+    "Youtube","YoutubeDownloader"
+  ],
+  "repository": "https://github.com/shamilhabeebnelli/MwK-YTDL",
+  "success_url": "https://t.me/mwklinks",
+  "website": "https://github.com/shamilhabeebnelli/MwK-YTDL",
+  "env": {
+        "API_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
+        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
+        "BOT_TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true}
+  },
+      "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+
+
+}
