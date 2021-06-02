@@ -106,7 +106,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaAudio(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename) + "Uploaded by @mwk_youtubebot",
+            caption=os.path.basename(filename) + "\nUploaded by @mwk_youtubebot",
             title=os.path.basename(filename) + "Shamil 9496300461"
         )
 
@@ -119,7 +119,7 @@ async def catch_youtube_dldata(c, q):
             width=width,
             height=height,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename)\n"Uploaded by @mwk_youtubebot",
+            caption=os.path.basename(filename) + "\nUploaded by @mwk_youtubebot",
             supports_streaming=True
         )
 
@@ -128,7 +128,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaDocument(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename)\n"Uploaded by @mwk_youtubebot"
+            caption=os.path.basename(filename) + "\nUploaded by @mwk_youtubebot"
         )
 
     if cb_data.startswith("docvideo"):
@@ -137,7 +137,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaDocument(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename)\n"Uploaded by @mwk_youtubebot"
+            caption=os.path.basename(filename) + "\nUploaded by @mwk_youtubebot"
         )
     if med:
         loop.create_task(send_file(c, q, med, filename))
