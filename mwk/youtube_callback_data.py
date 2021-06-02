@@ -104,7 +104,7 @@ async def catch_youtube_dldata(c, q):
     if cb_data.startswith("audio"):
         filename = await downloadaudiocli(audio_command)
         med = InputMediaAudio(
-            media=filename + "@shamilnelli",
+            media=filename,
             thumb=thumb_image_path,
             caption=os.path.basename(filename) + "Uploaded by @mwk_youtubebot",
             title=os.path.basename(filename) + "Shamil 9496300461"
