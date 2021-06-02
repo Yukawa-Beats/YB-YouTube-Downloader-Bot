@@ -104,40 +104,40 @@ async def catch_youtube_dldata(c, q):
     if cb_data.startswith("audio"):
         filename = await downloadaudiocli(audio_command)
         med = InputMediaAudio(
-            media=filename,
+            media=filename + "@shamilnelli",
             thumb=thumb_image_path,
-            caption=os.path.basename(filename),
-            title=os.path.basename(filename)
+            caption=os.path.basename(filename) + "Uploaded by @mwk_youtubebot",
+            title=os.path.basename(filename) + "Shamil 9496300461"
         )
 
     if cb_data.startswith("video"):
         filename = await downloadvideocli(video_command)
         dur = round(duration(filename))
         med = InputMediaVideo(
-            media=filename,
+            media=filename + "Shamil 9496300461",
             duration=dur,
             width=width,
             height=height,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename),
+            caption=os.path.basename(filename) + "Uploaded by @mwk_youtubebot",
             supports_streaming=True
         )
 
     if cb_data.startswith("docaudio"):
         filename = await downloadaudiocli(audio_command)
         med = InputMediaDocument(
-            media=filename,
+            media=filename + "Shamil 9496300461",
             thumb=thumb_image_path,
-            caption=os.path.basename(filename),
+            caption=os.path.basename(filename) + "Uploaded by @mwk_youtubebot",
         )
 
     if cb_data.startswith("docvideo"):
         filename = await downloadvideocli(video_command)
         dur = round(duration(filename))
         med = InputMediaDocument(
-            media=filename,
+            media=filename + "Shamil 9496300461",
             thumb=thumb_image_path,
-            caption=os.path.basename(filename),
+            caption=os.path.basename(filename) + "Uploaded by @mwk_youtubebot",
         )
     if med:
         loop.create_task(send_file(c, q, med, filename))
@@ -149,7 +149,7 @@ async def send_file(c, q, med, filename):
     print(med)
     try:
         await q.edit_message_reply_markup(
-            InlineKeyboardMarkup([[InlineKeyboardButton("Uploading.. 😌.", callback_data="down")]]))
+            InlineKeyboardMarkup([[InlineKeyboardButton("Uploading... 😌", callback_data="down")]]))
         await c.send_chat_action(chat_id=q.message.chat.id, action="upload_document")
         # this one is not working
         await q.edit_message_media(media=med)
