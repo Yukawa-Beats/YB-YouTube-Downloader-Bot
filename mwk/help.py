@@ -1,4 +1,4 @@
-# Regen & Mod by @shamilhabeebnelli
+# Regen & Mod by @chekuthan_0405
 # Pyrogram - Telegram MTProto API Client Library for Python
 # Copyright (C) 2017-2020 Dan <https://github.com/delivrance>
 #
@@ -22,5 +22,5 @@ from pyrogram import Client, Filters
 
 @Client.on_message(Filters.command(["help"]))
 async def start(client, message):
-    helptxt = f"Hey Bro Iam [MwK] Youtube Bot\nSend me YouTube Video Link I will upload to Telegram! \n\n(No PlayList, Live Stream URL Supported!)🤗"
+    helptxt = f"ഹെലോ.. 🙋🏻‍♂️ഞാൻ ഒരു യൂട്യൂബ് വീഡിയോ ഡൗണ്ലോഡർ ബോട്ട് ആണ്...എന്നെ ഉണ്ടാക്കിയത് @chekuthan_0405 ആണ്.👑\nഎനിക്ക് യൂട്യൂബ് വീഡിയോ ലിങ്ക് അയച്ചു തരിക \n\n(No PlayList, Live Stream URL Supported!)🤗"
     await message.reply_text(helptxt)
