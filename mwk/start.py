@@ -7,14 +7,14 @@ async def start(client, message):
     joinButton = InlineKeyboardMarkup(
     [
         [
-         InlineKeyboardButton("Updates Channel", url="https://t.me/mwklinks"),
-         InlineKeyboardButton("Support Group", url="https://t.me/redbullfed"),
+         InlineKeyboardButton("Join My Channel", url="https://t.me/ybdemochannel"),
+         InlineKeyboardButton("INSTAGRAM", url="https://instagram.com/yukawa_beats"),
          ],[
            InlineKeyboardButton(
-            "Developer", url="https://t.me/shamilnelli")
+            "Developer", url="https://t.me/chekuthan_0405")
             ]
       ]
     )
-    welcomed = f"Hi, <b>{message.from_user.first_name}</b>.\nThis is <b>[MwK] YouTube To TG Uploader Bot</b> by @shamilnelli\nHit /help for more"
+    welcomed = f"Hi, <b>{message.from_user.first_name}</b>.\nThis is <b>YB YouTube Downloader Bot</b> by @chekuthan_0405\nHit /help for more"
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
