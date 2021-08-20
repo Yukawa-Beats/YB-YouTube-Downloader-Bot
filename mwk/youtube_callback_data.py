@@ -106,8 +106,8 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaAudio(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename) + "\n\n**Uploaded by @mwk_youtubebot**",
-            title=os.path.basename(filename) + "Shamil 9496300461"
+            caption=os.path.basename(filename) + "\n\n**Uploaded by Yukawa Beats 👉 @ybdemochannel**",
+            title=os.path.basename(filename) + "Yukawa Beats"
         )
 
     if cb_data.startswith("video"):
@@ -119,7 +119,7 @@ async def catch_youtube_dldata(c, q):
             width=width,
             height=height,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename) + "\n\n**Uploaded by @mwk_youtubebot**",
+            caption=os.path.basename(filename) + "\n\n**Uploaded by Yukawa Beats 👉 @ybdemochannel**",
             supports_streaming=True
         )
 
@@ -128,7 +128,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaDocument(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename) + "\n\n**Uploaded by @mwk_youtubebot**"
+            caption=os.path.basename(filename) + "\n\n**Uploaded by Yukawa Beats 👉 @ybdemochannel**"
         )
 
     if cb_data.startswith("docvideo"):
@@ -137,7 +137,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaDocument(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename) + "\n\n**Uploaded by @mwk_youtubebot**"
+            caption=os.path.basename(filename) + "\n\n**Uploaded by Yukawa Beats 👉 @ybdemochannel**"
         )
     if med:
         loop.create_task(send_file(c, q, med, filename))
