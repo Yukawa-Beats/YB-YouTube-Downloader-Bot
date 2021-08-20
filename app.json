@@ -1,13 +1,13 @@
 {
-  "name": "YouTube To Telegram Uploader Bot by Shamil Habeeb",
+  "name": "YouTube To Telegram Uploader Bot ",
   "description": "A telegram bot To Download Youtube Files ",
-  "logo": "https://telegra.ph/file/cdb294d11026660eaf84b.jpg",
+  "logo": "https://telegra.ph/file/d2f7059a51ef1671cf6d7.jpg",
   "keywords": [
     "Youtube","YoutubeDownloader"
   ],
-  "repository": "https://github.com/shamilhabeebnelli/MwK-YTDL",
-  "success_url": "https://t.me/mwklinks",
-  "website": "https://github.com/shamilhabeebnelli/MwK-YTDL",
+  "repository": "https://github.com/Yukawa-Beats/YB-YouTube-Downloader-Bot",
+  "success_url": "https://t.me/ybdemochannel",
+  "website": "https://github.com/Yukawa-Beats/YB-YouTube-Downloader-Bot",
   "env": {
         "API_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
         "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
