@@ -1,4 +1,4 @@
-## YouTube To Telegram Uploader Bot by Shamil Habeeb
+## YouTube To Telegram Uploader Bot by Yukawa Beats
 #### A telegram bot To Download Youtube Files
 ##### Prerequisite
 ##### ffmpeg
